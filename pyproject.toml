@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "task-manager"
+name = "hexlet-code"
 version = "0.1.0"
 description = ""
 authors = ["Aigars Sinevics <aigarzs@gmail.com>"]
@@ -8,6 +8,7 @@ packages = [{include = "task_manager"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+django = "^5.0.7"
 
 
 [build-system]
