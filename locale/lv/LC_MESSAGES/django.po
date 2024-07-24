@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-24 14:55+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+
+#: task_manager/settings.py:111
+msgid "Russian"
+msgstr ""
+
+#: task_manager/settings.py:112
+msgid "Latvian"
+msgstr ""
+
+#: task_manager/settings.py:113
+msgid "English"
+msgstr ""
+
+#: task_manager/templates/base.html:9 task_manager/views.py:11
+msgid "Task Manager - Hexlet"
+msgstr "Uzdevumu pārvaldnieks - Hexlet"
+
+#: task_manager/templates/base.html:14
+msgid "Task manager"
+msgstr "Uzdevumu pārvaldnieks"
+
+#: task_manager/templates/base.html:19
+msgid "Users"
+msgstr "Lietotāji"
+
+#: task_manager/templates/base.html:22
+msgid "Login"
+msgstr "Ieiet"
+
+#: task_manager/templates/base.html:25
+msgid "Registration"
+msgstr "Reģistrēties"
+
+#: task_manager/templates/index.html:13
+msgid "Hello from Hexlet!"
+msgstr "Sveiciens no Hexlet!"
+
+#: task_manager/templates/index.html:14
+msgid "Practical programming courses"
+msgstr "Praktiski programmēšanas kursi"
+
+#: task_manager/templates/index.html:16
+msgid "Find more"
+msgstr "Uzzināt vairāk"
