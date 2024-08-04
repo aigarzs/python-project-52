@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-24 14:55+0300\n"
+"POT-Creation-Date: 2024-08-04 13:03+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: task_manager/settings.py:111
+#: task_manager/settings.py:107
 msgid "Russian"
 msgstr ""
 
-#: task_manager/settings.py:112
+#: task_manager/settings.py:108
 msgid "Latvian"
 msgstr ""
 
-#: task_manager/settings.py:113
+#: task_manager/settings.py:109
 msgid "English"
 msgstr ""
 
-#: task_manager/templates/base.html:9 task_manager/views.py:11
+#: task_manager/templates/base.html:9
 msgid "Task Manager - Hexlet"
 msgstr "Task Manager from Hexlet"
 
@@ -38,15 +38,16 @@ msgstr "Task Manager from Hexlet"
 msgid "Task manager"
 msgstr "Task manager"
 
-#: task_manager/templates/base.html:19
+#: task_manager/templates/base.html:19 task_manager/templates/users_list.html:7
 msgid "Users"
 msgstr "Users"
 
-#: task_manager/templates/base.html:22
+#: task_manager/templates/base.html:45 task_manager/templates/login.html:7
 msgid "Login"
 msgstr "Login"
 
-#: task_manager/templates/base.html:25
+#: task_manager/templates/base.html:48 task_manager/views.py:78
+#: task_manager/views.py:104
 msgid "Registration"
 msgstr "Registration"
 
@@ -61,3 +62,133 @@ msgstr "Practical programming courses"
 #: task_manager/templates/index.html:16
 msgid "Find more"
 msgstr "Find more"
+
+#: task_manager/templates/login.html:17 task_manager/templates/login.html:18
+#: task_manager/templates/user_edit.html:20
+#: task_manager/templates/user_edit.html:21
+#: task_manager/templates/users_list.html:13
+#, fuzzy
+#| msgid "Users"
+msgid "Username"
+msgstr "Users"
+
+#: task_manager/templates/login.html:21 task_manager/templates/login.html:22
+#: task_manager/templates/user_edit.html:28
+#: task_manager/templates/user_edit.html:29
+msgid "Password"
+msgstr ""
+
+#: task_manager/templates/login.html:24
+msgid "Enter"
+msgstr ""
+
+#: task_manager/templates/user_delete.html:6
+msgid "Delete User"
+msgstr ""
+
+#: task_manager/templates/user_delete.html:11
+msgid "Yes, delete"
+msgstr ""
+
+#: task_manager/templates/user_edit.html:12
+#: task_manager/templates/user_edit.html:13
+msgid "First name"
+msgstr ""
+
+#: task_manager/templates/user_edit.html:16
+#: task_manager/templates/user_edit.html:17
+msgid "Last name"
+msgstr ""
+
+#: task_manager/templates/user_edit.html:25
+msgid ""
+"Required field. No more than 150 characters. Accepted characters, numbers "
+"and symbols  @/./+/-/_."
+msgstr ""
+
+#: task_manager/templates/user_edit.html:30
+msgid "Your password should contain at least 3 symbols."
+msgstr ""
+
+#: task_manager/templates/user_edit.html:33
+#: task_manager/templates/user_edit.html:34
+msgid "Password confirm"
+msgstr ""
+
+#: task_manager/templates/user_edit.html:38
+msgid "For confirmation please repeat your password."
+msgstr ""
+
+#: task_manager/templates/users_list.html:14
+msgid "Full name"
+msgstr ""
+
+#: task_manager/templates/users_list.html:15
+msgid "Date created"
+msgstr ""
+
+#: task_manager/templates/users_list.html:28 task_manager/views.py:134
+#: task_manager/views.py:177
+msgid "Update"
+msgstr ""
+
+#: task_manager/templates/users_list.html:30
+msgid "Delete"
+msgstr ""
+
+#: task_manager/views.py:38
+msgid "You have logged in"
+msgstr ""
+
+#: task_manager/views.py:41
+msgid ""
+"Please enter valid user name and password. Both fields might be register "
+"sensitive."
+msgstr ""
+
+#: task_manager/views.py:50
+msgid "You have logged out."
+msgstr ""
+
+#: task_manager/views.py:68
+msgid "Passwords do not match."
+msgstr ""
+
+#: task_manager/views.py:79 task_manager/views.py:105
+msgid "Register user"
+msgstr ""
+
+#: task_manager/views.py:99 task_manager/views.py:171
+msgid "A user with that username already exists."
+msgstr ""
+
+#: task_manager/views.py:114
+msgid "User has successfully registered"
+msgstr ""
+
+#: task_manager/views.py:124 task_manager/views.py:146
+#: task_manager/views.py:196 task_manager/views.py:215
+msgid "You are not authorized. Please log in!"
+msgstr ""
+
+#: task_manager/views.py:128 task_manager/views.py:150
+#: task_manager/views.py:200 task_manager/views.py:219
+msgid "You have not rights to change other user."
+msgstr ""
+
+#: task_manager/views.py:133 task_manager/views.py:176
+msgid "Update user"
+msgstr ""
+
+#: task_manager/views.py:186
+msgid "User has successfully updated"
+msgstr ""
+
+#: task_manager/views.py:205
+#, python-format
+msgid "Are you sure you want to delete %(first_name)s %(last_name)s?"
+msgstr ""
+
+#: task_manager/views.py:225
+msgid "User has successfully deleted."
+msgstr ""

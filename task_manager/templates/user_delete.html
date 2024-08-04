@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+
+
+<h1 class="my-4">{% translate "Delete User" %}</h1>
+      
+<p>{{ question }}</p>
+<form method="post">
+  {% csrf_token %}
+  <input class="btn btn-danger" type="submit" value="{% translate 'Yes, delete' %}">
+</form>
+
+
+{% endblock %}

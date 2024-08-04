@@ -1,4 +1,5 @@
-from .views import HomeView
+from .views import (IndexView, UsersView, UserCreateView, LoginView,
+                    LogoutView, UserUpdateView, UserDeleteView)
 
 """
 URL configuration for task_manager project.
@@ -21,5 +22,12 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", HomeView.as_view(), name="home")
+    path("", IndexView.as_view(), name="home"),
+    path("users/", UsersView.as_view(), name="users"),
+    path("users/create/", UserCreateView.as_view(), name="user_create"),
+    path("login/", LoginView.as_view(), name="login"),
+    path("logout/", LogoutView.as_view(), name="logout"),
+    path("users/<int:pk>/update/", UserUpdateView.as_view(),
+         name="user_update"),
+    path("users/<int:pk>/delete/", UserDeleteView.as_view(), name="user_delete")
 ]

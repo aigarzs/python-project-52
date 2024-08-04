@@ -18,19 +18,58 @@
           <li class="nav-item">
             <a class="nav-link" href="/users/">{% translate "Users" %}</a>
           </li>
-          <li class="nav-item">
+
+          {% if user.is_authenticated %}
+
+            <li class="nav-item">
+              <a class="nav-link" href="/statuses/">Статусы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/labels/">Метки</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tasks/">Задачи</a>
+            </li>
+
+
+            <form action="/logout/" method="post">
+              {% csrf_token %}
+              <input class="btn nav-link" type="submit" value="Выход">
+            </form>
+
+
+
+          {% else %}
+
+            <li class="nav-item">
               <a class="nav-link" href="/login/">{% translate "Login" %}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/users/create/">{% translate "Registration" %}</a>
+              <a class="nav-link" href="{% url 'user_create' %}">{% translate "Registration" %}</a>
             </li>
+
+           {% endif %}
 
         </ul>
       </div>
     </nav>
 
+    <div class="container wrapper flex-grow-1">
+
+    {% if messages %}
+      {% for message in messages %}
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+          <div class="alert alert-danger">{{ message }}</div>
+        {% else %}
+          <div class="alert alert-success">{{ message }}</div>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
     {% block content %}
     {% endblock %}
+
+    </div>
 
     <footer>
       <div class="container my-5 pt-4 border-top">
