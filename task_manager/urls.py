@@ -29,5 +29,6 @@ urlpatterns = [
     path("logout/", LogoutView.as_view(), name="logout"),
     path("users/<int:pk>/update/", UserUpdateView.as_view(),
          name="user_update"),
-    path("users/<int:pk>/delete/", UserDeleteView.as_view(), name="user_delete")
+    path("users/<int:pk>/delete/", UserDeleteView.as_view(),
+         name="user_delete")
 ]

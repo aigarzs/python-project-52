@@ -20,12 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-=(#jj0ovdq8%*r#@@w6oyo5*21-*-^_4q(4-ui76vhay$=z8tk'
+SECRET_KEY = 'django-insecure-=(#jj0ovdq8%*r#@@w6oyo5*21-*-^_4q(4-76vhay$=z8tk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["webserver", "localhost"]
+# ALLOWED_HOSTS = ["webserver", "localhost"]
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -76,6 +77,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'TEST': {'NAME': BASE_DIR / 'test.sqlite3'},
     }
 }
 
@@ -83,19 +85,10 @@ DATABASES = {
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-#    {
-#        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-#    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-	'OPTIONS' : {'min_length': 3}
-    },
-#    {
-#        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-#    },
-#    {
-#        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-#    },
+    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+     'OPTIONS': {'min_length': 3}
+     },
+
 ]
 
 # Internationalization

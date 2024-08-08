@@ -2,11 +2,9 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.db import IntegrityError
-from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.views import View
 from django.utils.translation import gettext as _
-from django.utils.translation import activate, deactivate
 from django.contrib.auth.password_validation import validate_password
 from django.contrib import messages
 
@@ -39,7 +37,8 @@ class LoginView(View):
             return redirect("home")
         else:
             context = {"error": _("Please enter valid user name and password. "
-                                  + "Both fields might be register sensitive.")}
+                                  + "Both fields might be "
+                                  + "register sensitive.")}
             return render(request, "login.html",
                           context=context, status=400)
 
