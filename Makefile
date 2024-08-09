@@ -1,5 +1,5 @@
 start:
-	poetry run python manage.py runserver 8000 
+	poetry run python manage.py runserver 0:8000 
 
 
 dev:
